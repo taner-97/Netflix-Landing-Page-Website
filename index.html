@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--<link rel="stylesheet" href="font-awesome.min.css">-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">TV shows</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search"></i>
+        </div>
+    </header>
+
+    <!--Banner-->
+    <div class="banner">
+        <img src="images/img2.jpg" class="bg">
+        <div class="content">
+            <img src="images/mortal-kombat.png" class="movieTitle">
+            <h4>
+                <span>2021</span>
+                <span><i>16+</i></span>
+                <span>1hr 55mins</span>
+                <span>Action</span>
+            </h4>
+            <p>Mortal Kombat is a 2021 American martial arts fantasy film based on the video game franchise of the same name and a reboot of the Mortal Kombat film series. The film stars Lewis Tan, Jessica McNamee, Josh Lawson, Tadanobu Asano, Mehcad Brooks, Ludi Lin, Chin Han, Joe Taslim, and Hiroyuki Sanada. It is directed by Simon McQuoid  from a screenplay by Greg Russo and Dave Callaham and a story by Russo and Oren Uziel.</p>
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play"></i>Play</a>
+                <a href="#"><i class="fa fa-plus"></i>My List</a>
+            </div>
+        </div>
+        <a href="#" class="play" onclick="toggleVideo();"><img src="images/play.png">Watch Trailer</a>
+    </div>
+    <!--Trailer-->
+    <div class="trailer">
+        <video src="trailer/Mortal Kombat (2021) - Official Red Band Trailer.mp4" controls="true" autoplay="flase"></video>
+        <img src="images/close.png" class="close" onclick="toggleVideo();">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
